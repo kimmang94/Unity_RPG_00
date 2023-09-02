@@ -3601,7 +3601,7 @@ public class TerrainToolkitEditor : Editor {
 			
 			// Paint...
 			if( Physics.Raycast(ray, out hit, Mathf.Infinity) ){
-				if( hit.transform.GetComponent("TerrainToolkit") ){
+				if( hit.transform.GetComponent("pTerrainToolkit") ){
 					toolkit.brushPosition = hit.point;
 					if( toolkit.isBrushPainting )	toolkit.paint();
 				}
